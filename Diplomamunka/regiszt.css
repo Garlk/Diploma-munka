@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: linear-gradient(240deg, #ACFCD9, #B084CC);
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+    padding: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------------------------------*/
+#centercg{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%,-50%);
+	background: white;
+	border-radius: 10px;
+	width:60%;
+	height:80%;
+	min-height: 500px;
+	box-sizing: border-box;
+	padding:15px;
+}
+#focimcegnev {
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;	
+}
+#kilepesG {
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  font-size: 18px;	
+}
+#kitoltoresz{
+  position: absolute;
+  top: 10%;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+}
+#kitoltoresz table{
+  margin-top:50px;
+  position: relative;
+  top: 0%;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+}
+#ujfelhasznalo input[type="text"]{
+	left:25px;
+	width: 35%;
+    height: 35px;
+    padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+}
+#kitoltoresz #ujfelhasznalo{
+  position: relative;
+  top: 32px;
+  right: 16px;
+  font-size: 18px;
+}
+.rendeloiadatok{
+	margin: 10px 0 0 20px;
+	text-align:left;
+}
+#lista input[type="text"]{
+	height: 35px;
+    padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+	margin-top:5px;
+}
+#lista input[type="button"]{
+	padding:5px;
+}
+.rendeloiadatok input[type="button"]{
+	padding:5px;
+}

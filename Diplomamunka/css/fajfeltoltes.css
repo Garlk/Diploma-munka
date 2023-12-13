@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: linear-gradient(240deg, #ACFCD9, #B084CC);
+	background-repeat: no-repeat;
+    background-size: cover;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+    padding: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0 5px 0 5px;
+}
+/*------------------------------------------*/
+
+#centercg{
+	text-align: left;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%,-50%);
+	background: white;
+	border-radius: 10px;
+	width:60%;
+	height:40%;	
+	min-height: 650px;
+	box-sizing: border-box;
+	padding:15px;
+
+	
+}
+#focimcegnev {
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;	
+ 
+}
+
+#kilepesG {
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  font-size: 18px;	
+}
+#kitoltoresz{
+	text-align:center;
+	width: 100%;
+	margin: 48px 48px 0 0;
+	padding: 12px 12px 12px 12px;
+	max-height:500px;
+	background-color:#e3e1e1;
+	border-radius:10px;
+}
+#kitoltoresz td{
+	padding: 5px 5px 5px 5px;
+	border:  1px solid black;
+	border-radius:10px;	
+	
+}
+
+#tabcim{
+	text-align:left;
+}
+.fajlcimek{
+	border: 1px;
+	padding:16px 0 8px 0;	
+}
+/*--------------------------------------------*/
+.fajlok {
+}
+.fajlnev{
+	background-color:white;
+}
+.kiterjesztes{
+	width:8%;
+	background-color:white;
+}
+.fajlcsoport{
+	width:8%;;
+	background-color:white;
+}
+.kiallito{
+	background-color:white;
+}
+.kiallitasi_honapvev{
+	width:8%;
+	background-color:white;
+}
+.vonatkozasi_ido{
+	width:8%;
+	background-color:white;
+}
+.feltoltesi_ido{
+	width:8%;
+	background-color:white;
+}
+.LetoltesG {
+width:8%;
+}
+.LetoltesG input{
+	width: 100%;
+}
+.TorlesG{
+width:8%;
+}
+.TorlesG input{
+	width: 100%;
+}
+#kitoltoresz .TorlesG {
+	padding: 0 5px 0 5px;
+	border:  0px solid black;
+	border-radius:10px;	
+	
+}
+#kitoltoresz .LetoltesG {
+	padding: 0 5px 0 5px;;
+	border:  0px solid black;
+	border-radius:10px;	
+}
+/*---------------------------------------*/
+#fajlfetoltes{
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;	
+  margin-bottom:30px;
+  }
+#visszalepes{
+	position: absolute;
+	bottom: 8px;
+	left: 32px;
+	text-align: center;
+	margin-bottom:30px;
+}
+
+/*
+
+wrap conent re egy megoldás
+
+.block { 
+overflow: hidden; 
+padding:10px;
+ margin-top:10px;
+ height:auto;
+ background-color:#f9f9f9; }
+ */

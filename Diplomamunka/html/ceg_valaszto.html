@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+<head>
+<meta charset= "utf-8"> 
+<title> KM compny selection</title>
+<link rel="stylesheet" href="cegvcss.css">
+</head>
+<body>
+ 
+<div id="center">
+		<div id="kgombok">
+			<form action="php_hivas_helye" method="post">
+				<input type="submit" value="Kilépés">
+			</form>
+		</div>
+
+		<div id="ucgombok">
+			<form action="php hivas helye" method="post">
+				<label>Új cég neve:</label>
+				<input type="text" name="" id="ujceg_nev" required>
+				<input type="submit" value="Új cég felvétele">
+			</form>
+		</div>
+		
+		<table id="ceg_valaszto">
+		<tr>
+		<th>
+			<div class="vgombok">
+				<form action="PHP hivas helye" method="post">
+					<label>Egyéni válallkozók</label>
+					<select name="Tarsas_valalk" id="Tars_valalk" from="milyen phph ból legyen" >
+					<option value="0_valall">Kis József</option>
+					<option value="1_valall">Nagy Mari</option>
+					<option value="2_valall">Nagy János</option>
+					<option value="3_valall">Nice Uganta</option>
+					<option value="4_valall">Kelly Frame</option>
+					</select>
+					<input type="submit" value="Cég választása">
+				</form>
+			</div>
+			</th>
+			<th>
+			<div class="vgombok">
+				<form action="PHP hivas helye" method="post">
+					<label>Társas Válallkozások</label>
+					<select name="Tarsas_valalk" id="Tars_valalk" from="milyen phph ból legyen" >
+					<option value="0_ceg">Fulop és Társa</option>
+					<option value="1_ceg">Kicsit gazdag ceg</option>
+					<option value="2_ceg">Nem kedvelt imexion</option>
+					<option value="3_ceg">Oneness Accounting</option>
+					<option value="4_ceg">Valamiből élni kell</option>
+					</select>
+					<input type="submit" value="Cég választása">	
+				</form>
+				<th>
+			</div>
+		</tr>
+		</table>
+		
+ </div>
+
+</body>
+</html>

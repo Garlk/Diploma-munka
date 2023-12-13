@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+<head>
+<meta charset= "utf-8"> 
+<title> KM company info</title>
+<link rel="stylesheet" href="ceg_adatok.css">
+<link rel="stylesheet" href="ceg_adatok.js">
+
+
+
+</head>
+<body>
+
+<div id="centercg">
+	<form>
+		<label id="focimcegnev">
+		Választott cég adatok
+		</label>
+
+		<div id="kilepesG">
+			<input type="button" name="kilepesG" value="Kilépés" >
+		</div>
+
+		<table id="kitoltoresz">
+		<tr>
+		<th>
+			<div class="ceg_adatok">
+				<label>Cég neve</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegydfi gyümi" name="cegneve" disabled>
+			</div>
+
+			<div class="ceg_adatok">
+				<label>Cégjegyzéki szám</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="cegjegyzekszam" disabled>
+			</div>
+
+			<div class="ceg_adatok">
+				<label>Cég Adószáma</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="adoszam" disabled>
+			</div>
+
+			<div class="ceg_adatok">
+				<label>Cég székhelye</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="szekhely" disabled>
+			</div>
+
+			<div class="ceg_adatok">
+				<label>Cég telefonos elérhetősége </label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="telefonoselrehetoseg" disabled>
+			</div>
+
+			<div class="ceg_adatok">
+				<label>Cég email címe</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="emailcim" disabled>
+			</div>
+			<div class="ceg_adatok">
+				<label>Cég felhasznaló neve: *</label>
+				<br>
+				<input class="irasoseng" name="Felhasznalonev" type="text" value="KisJózsef" name="cegneve" disabled>
+			</div>
+		</th>
+		<th>
+			<div class="ceg_adatok">
+				<label>Cég bankszámla száma</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="bankszamlaszam" disabled>
+			</div>
+
+			<div class="ceg_adatok">
+				<label>Cég ügyvezető</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="ugyentizo" disabled>
+			</div>
+
+			<div class="ceg_adatok">
+				<label>Cég kapcsolattartó</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="kapcsolattarto" disabled>
+			</div>
+
+			<div class="ceg_adatok">
+				<label>Cég alkulási év</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="alakulasev" disabled>
+			</div>
+
+			<div class="ceg_adatok">
+				<label>Cég tevéknysége</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="tevekenyseg" disabled>
+			</div>
+
+			<div class="ceg_adatok">
+				<label>Cég tipusa/megnevezés</label>
+				<br>
+				<input class="irasoseng" type="text" value="Kis pista vegyi gyümi" name="tipusmegnevezes" disabled>
+			</div>
+			<div class="ceg_adatok">
+				<label>Felhasznaló jelszava: *</label>
+				<br>
+				<input class="irasoseng" name="felhasznalojelszava0" type="text" value="új jeleszó megadása" name="cegneve" disabled>
+			</div>
+			<div class="ceg_adatok">
+				<label>Felhasználó jelszava újra: *</label>
+				<br>
+				<input class="irasoseng" name="felhasznalojelszava1" type="text" value="új jelszó megadása" name="cegneve" disabled>
+			</div>
+		</th>
+		</tr>
+		</table>
+		
+		<div id="mentesG">
+			<input id="Mentesgomb" onclick="change()" type="button" name="adatokmentes" value="Adatok megáltoztatása" >
+			<br>
+			<input id="fajfeltotes" type="button" name="kepfeltotes" value="Fájl feltőltés" >
+			
+		<div id="cegtorlesG">
+		<input id="cegtorles" type="button" name="cegtorles" value="Cégtörlés" >
+		</div>
+		</div>
+
+		<script src="cegadadok.js"></script>
+		
+
+		
+	</form>
+	
+</div>
+
+</body>
+</html>

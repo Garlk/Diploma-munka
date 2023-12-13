@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+<head>
+<meta charset= "utf-8"> 
+<title> KM new company</title>
+<link rel="stylesheet" href="fajlfeltoltes.css">
+<link rel="stylesheet" href="ceg_adatok.js">
+
+</head>
+<body>
+
+<div id="centercg">
+	<form>
+		<label id="focimcegnev">
+		Feltőltendő fájl adatai
+		</label>
+		<div id="tipus_valaszto">
+		<div id="kilepesG">
+			<input type="button" name="kilepesG" value="Kilépés" >
+		</div>
+		
+		<div id="feltolto_valaszto">
+			<div class="fajl_valaszto">
+				<label>Válassza ki milyen fájlt szeretne feltőlteni:</label>
+			<br>
+				<select id="fajltipus0"class="fajl_tipus" tabindex="50" name="fajltipus0" onchange="dukumentunvalaszto()">
+					<option id="1" value="1">Válasz fájl tipust</option>
+					<option value="fajl_valaszto_szamla">Számla</option>
+					<option value="fajl_valaszto_banki_szamlat">Bankszámla kivonat</option>
+					<option value="fajl_valaszto_egyebb">Egyébb dokumentum</option>
+			   </select>
+			</div>   
+			<!-- --------------------------------------- -->
+			<div id="fajl_valaszto_szamla" style="display: none;">
+				<label>Kimenő/Bejövő számla:</label>
+				<br>
+				<select id="fajltipus1" class="fajl_tipus" tabindex="50" name="fajltipus1">
+					<option value="Bszamla">Bejövő számla</option>
+					<option value="Kszamla">Kimenő számla</option>
+			   </select>
+			
+				<div id="szamla_kiallito" >
+				   <label>Számla kiállítója</label>
+				   <br>
+					   <label>Már felvitt számla kiállító:</label>
+					   <input type="checkbox" id="azonositas" name="datum_sima" value="azonos_datum" onclick="kialitocsek()">
+					
+				   <div id="uj_kiallitok" >
+					   <input type="text" >
+					   <input type="button" value="Új partner felvétele">
+					<br>
+					</div>
+					<div id="felvet_kiallitok" style="display: none;">
+							<label>Eddigi kiállítók:</label>
+							<select id="kiallitok" class="evek" tabindex="50" name="fajltipus2">
+								<option value="pelda_kiallito">pelda kiallito</option>
+								<option value="pelda_kiallito2">pelda2 kiallito2</option>
+							</select>
+					</div>
+				</div>
+				<div class="datumvalaszto">
+			   <label>Mikkora vonatkozik a dokumentum:</label>
+			    <br>
+				<label>Év:</label>
+					<select class="ido_ev" class="evek" tabindex="50" name="datum_ev0">
+						<option value="21">2021</option>
+						<option value="22">2022</option>
+						<option value="23">2023</option>					
+					</select>
+				<label>Hónap:</label>
+					<select class="ido_ev" class="honapok" tabindex="50" name="datum_ho0">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</div>
+				<div class="filefeltoltes">
+				<label for="myfile">Válasz fájlt:</label>
+				<input type="file" id="myfile" name="myfile">
+				</div>
+			</div>
+			<!-- --------------------------------------- -->
+			<div id="fajl_valaszto_banki_szamlat" style="display: none;">
+				<label>Banki számla/Számlatörténet:</label>
+				<br>
+				<select id="fajltipus1" class="fajl_tipus" tabindex="50" name="fajltipus1">
+					<option value="Bszamla">Bankszámla</option>
+					<option value="Kszamla">Számlatörténet</option>
+			   </select>
+			   <div class="datumvalaszto">
+			   <label>Mikkora vonatkozik a dokumentum:</label>
+			    <br>
+				<label>Év:</label>
+					<select class="ido_ev" class="evek" tabindex="50" name="datum_ev1">
+						<option value="21">2021</option>
+						<option value="22">2022</option>
+						<option value="23">2023</option>					
+					</select>
+				<label>Hónap:</label>
+					<select class="ido_ev" class="honapok" tabindex="50" name="datum_ho1">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</div>
+				<div class="filefeltoltes">
+				<label for="myfile">Válasz fájlt:</label>
+				<input type="file" id="myfile" name="myfile">
+				</div>
+			</div>
+			<!-- --------------------------------------- -->
+			<div id="fajl_valaszto_egyebb" style="display: none;">
+				<label>Egyébb dokumentumok tipusai:</label>
+				<br>
+				<select id="fajltipus2" class="fajl_tipus" tabindex="50" name="fajltipus2">
+					<option value="Nav_ugyi">Nav-val kapcsolatos</option>
+					<option value="Munka_ugyi">Munka ügyi</option>
+					<option value="Egyeb">Egyébb</option>
+			    </select>
+			    <br>
+			    <label>Mikkora vonatkozik a dokumentum:</label>
+			    <br>
+				<div class="datumvalaszto">
+				<label>Év:</label>
+					<select id="ido_ev" class="evek" tabindex="50" name="datum_ev2">
+						<option value="21">2021</option>
+						<option value="22">2022</option>
+						<option value="23">2023</option>					
+					</select>
+				<label>Hónap:</label>
+					<select id="ido_ev" class="honapok" tabindex="50" name="datum_ho2">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</div>
+				<div class="filefeltoltes">
+				<label for="myfile">Válasz fájlt:</label>
+				<input type="file" id="myfile" name="myfile">
+				</div>
+			</div>
+			<!-- --------------------------------------- -->
+		</div>
+		
+		<div id="mentesG">
+			<input id="Mentesgomb" onclick="change()" type="button" name="adatokmentes" value="Adatok mentése" >
+			<br>
+			<input id="fajfeltotes" type="button" name="kepfeltotes" value="Fájl feltőltés" >
+		</div>
+	</form>
+	
+	<script src="cegadadok.js"></script>
+</div>
+
+</body>
+</html>
+
+<!--
+
+
+
+
+Számlák
+mikkora vonatkotik           pipa
+feltőltési idő adatbázis     pipa
+Kiállító szerintfel kell veni egy kiállítót + meg kell jeleníteni utána
+
+bankszamla
+mikkora vonatkotik 			 pipa
+feltőltési idő adatbázis	 pipa
+
+egyebdok
+milyen ügyi dokument		 pipa
+mikkora vonatkotik 			 pipa
+feltőltési idő adatbázis 	 pipa
+
+
+https://stackoverflow.com/questions/18115916/how-to-display-content-depending-on-dropdown-menue-user-selection
+-->
